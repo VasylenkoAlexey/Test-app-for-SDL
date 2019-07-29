@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.3932a6bc.chunk.css",
-    "main.js": "/static/js/main.b70aa3ab.chunk.js",
-    "main.js.map": "/static/js/main.b70aa3ab.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.27416cb6.chunk.js": "/static/js/2.27416cb6.chunk.js",
-    "static/js/2.27416cb6.chunk.js.map": "/static/js/2.27416cb6.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.2e351443efa562543e2ac1031217cf5e.js": "/precache-manifest.2e351443efa562543e2ac1031217cf5e.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.3932a6bc.chunk.css.map": "/static/css/main.3932a6bc.chunk.css.map"
+    "main.css": "/Test-app-for-SDL/static/css/main.3932a6bc.chunk.css",
+    "main.js": "/Test-app-for-SDL/static/js/main.b70aa3ab.chunk.js",
+    "main.js.map": "/Test-app-for-SDL/static/js/main.b70aa3ab.chunk.js.map",
+    "runtime~main.js": "/Test-app-for-SDL/static/js/runtime~main.1422bd2f.js",
+    "runtime~main.js.map": "/Test-app-for-SDL/static/js/runtime~main.1422bd2f.js.map",
+    "static/js/2.27416cb6.chunk.js": "/Test-app-for-SDL/static/js/2.27416cb6.chunk.js",
+    "static/js/2.27416cb6.chunk.js.map": "/Test-app-for-SDL/static/js/2.27416cb6.chunk.js.map",
+    "index.html": "/Test-app-for-SDL/index.html",
+    "precache-manifest.093dc66d4879afe2d4eabc48686d2dfe.js": "/Test-app-for-SDL/precache-manifest.093dc66d4879afe2d4eabc48686d2dfe.js",
+    "service-worker.js": "/Test-app-for-SDL/service-worker.js",
+    "static/css/main.3932a6bc.chunk.css.map": "/Test-app-for-SDL/static/css/main.3932a6bc.chunk.css.map"
   }
 }
