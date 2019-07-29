@@ -2,6 +2,7 @@
   "name": "test",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://vasylenkoalexey.github.io/Test-app-for-SDL/",
   "dependencies": {
     "immutability-helper": "^3.0.1",
     "node-sass": "^4.12.0",
