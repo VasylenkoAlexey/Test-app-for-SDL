@@ -2,13 +2,12 @@ import React, { Component, Suspense } from 'react';
 import SearchInput from './SearchInput';
 import PopupList from './PopupList';
 
-
 class SearchBox extends Component {
   render() {
     return (
       <React.StrictMode>
         <Suspense fallback={<h1>Loading...</h1>}>
-          <form className="SearchBox">
+          <form className="SearchBox" action="javascript:;" autoComplete="off">
             <SearchInput />
             <PopupList />
           </form>

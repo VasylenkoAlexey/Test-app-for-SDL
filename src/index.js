@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import store from "./store";
-import SearchBox from './SearchBox';
+import store from "./utils/store";
+import "./App.scss";
+import SearchBox from './components/SearchBox.js';
 import { Provider } from "react-redux";
 
 ReactDOM.render(
