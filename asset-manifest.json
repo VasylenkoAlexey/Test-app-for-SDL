@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Test-app-for-SDL/static/css/main.3932a6bc.chunk.css",
-    "main.js": "/Test-app-for-SDL/static/js/main.b70aa3ab.chunk.js",
-    "main.js.map": "/Test-app-for-SDL/static/js/main.b70aa3ab.chunk.js.map",
+    "main.css": "/Test-app-for-SDL/static/css/main.104bd592.chunk.css",
+    "main.js": "/Test-app-for-SDL/static/js/main.f2aaa502.chunk.js",
+    "main.js.map": "/Test-app-for-SDL/static/js/main.f2aaa502.chunk.js.map",
     "runtime~main.js": "/Test-app-for-SDL/static/js/runtime~main.1422bd2f.js",
     "runtime~main.js.map": "/Test-app-for-SDL/static/js/runtime~main.1422bd2f.js.map",
-    "static/js/2.27416cb6.chunk.js": "/Test-app-for-SDL/static/js/2.27416cb6.chunk.js",
-    "static/js/2.27416cb6.chunk.js.map": "/Test-app-for-SDL/static/js/2.27416cb6.chunk.js.map",
+    "static/js/2.8898bb7f.chunk.js": "/Test-app-for-SDL/static/js/2.8898bb7f.chunk.js",
+    "static/js/2.8898bb7f.chunk.js.map": "/Test-app-for-SDL/static/js/2.8898bb7f.chunk.js.map",
     "index.html": "/Test-app-for-SDL/index.html",
-    "precache-manifest.093dc66d4879afe2d4eabc48686d2dfe.js": "/Test-app-for-SDL/precache-manifest.093dc66d4879afe2d4eabc48686d2dfe.js",
+    "precache-manifest.5b49893ef9a92c133d3f7b0c50845788.js": "/Test-app-for-SDL/precache-manifest.5b49893ef9a92c133d3f7b0c50845788.js",
     "service-worker.js": "/Test-app-for-SDL/service-worker.js",
-    "static/css/main.3932a6bc.chunk.css.map": "/Test-app-for-SDL/static/css/main.3932a6bc.chunk.css.map"
+    "static/css/main.104bd592.chunk.css.map": "/Test-app-for-SDL/static/css/main.104bd592.chunk.css.map"
   }
 }
