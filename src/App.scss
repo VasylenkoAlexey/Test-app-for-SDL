@@ -33,6 +33,8 @@ button {
 .SearchBox {
   margin: auto;
   display: flex;
+  min-width: 350px;
+  width: 50%;
   outline: none;
   padding: 20px;
   border-radius: 4px;
@@ -116,6 +118,7 @@ button {
 }
 
 .close {
+  cursor: pointer;
   position: absolute;
   right: 5px;
   top: 11px;
@@ -183,6 +186,7 @@ button {
   overflow-y: scroll;
 
   ul {
+    cursor: pointer;
     margin: 0;
     padding: 0;
 

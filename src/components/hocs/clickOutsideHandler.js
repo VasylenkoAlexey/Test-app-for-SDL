@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect } from 'react';
 
 // TODO Add mobile handlers, touchstart event probably 
 function useClickOutsideHandler(ref, handler, keyCodes) {
@@ -19,11 +19,11 @@ function useClickOutsideHandler(ref, handler, keyCodes) {
   }
 
   useEffect(() => {
-    document.addEventListener("mousedown", handleClick);
-    document.addEventListener("keydown", handleKeyPress);
+    document.addEventListener('mousedown', handleClick);
+    document.addEventListener('keydown', handleKeyPress);
     return () => {
-      document.removeEventListener("mousedown", handleClick);
-      document.removeEventListener("keydown", handleKeyPress);
+      document.removeEventListener('mousedown', handleClick);
+      document.removeEventListener('keydown', handleKeyPress);
 
     };
   });

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { connect } from "react-redux";
-import { inputChange, inputClear, pushAutocompleteRef } from "../utils/actions";
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+
+import { inputChange, inputClear, pushAutocompleteRef } from '../utils/actions';
 
 class SearchInput extends Component {
   constructor(props) {
@@ -9,6 +11,11 @@ class SearchInput extends Component {
     this.state = {
       active: true
     };
+  }
+
+  static propTypes = {
+    searchInputValue: PropTypes.string,
+    isFetching: PropTypes.bool,
   }
 
   componentDidMount() {
@@ -34,17 +41,16 @@ class SearchInput extends Component {
       <div className={`field ${isTouched ? 'active' : ''}`}>
       
         <input ref={this.inputRef}
-          type="text" 
-          id="searchInput"
+          type='text' 
+          id='searchInput'
           value={this.props.searchInputValue}
           onChange={this.handleInput}
           onFocus={() => this.setState({ active: true })}
           onBlur={() => this.setState({ active: false })}
           placeholder={this.state.active ? '' : INPUT_NAME} />
-        {/*this.props.searchInputValue && <button type="button" onClick={this.handleClick}>Stop!</button>*/}
-        <label htmlFor="searchInput">{INPUT_NAME}</label>
-        {this.props.searchInputValue && <button onClick={this.handleClick} className="close"/>}
-        {this.props.isFetching && <div className="spinner"></div>}
+        <label htmlFor='searchInput'>{INPUT_NAME}</label>
+        {this.props.searchInputValue && <button onClick={this.handleClick} className='close'/>}
+        {this.props.isFetching && <div className='spinner'></div>}
 
       </div>
     );

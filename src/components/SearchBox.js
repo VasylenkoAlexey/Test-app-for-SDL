@@ -7,7 +7,7 @@ class SearchBox extends Component {
     return (
       <React.StrictMode>
         <Suspense fallback={<h1>Loading...</h1>}>
-          <form className="SearchBox" action="javascript:;" autoComplete="off">
+          <form className='SearchBox' action='javascript:;' autoComplete='off'>
             <SearchInput />
             <PopupList />
           </form>

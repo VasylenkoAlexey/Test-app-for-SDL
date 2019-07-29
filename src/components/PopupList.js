@@ -1,13 +1,27 @@
 import React, { PureComponent } from 'react';
-import { connect } from "react-redux";
-import { inputChange, popupOutsideClick, setAutocompleteOption } from "../utils/actions";
-import PopupListView from "./PopupListView";
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+
+import { inputChange, popupOutsideClick, setAutocompleteOption } from '../utils/actions';
+import PopupListView from './PopupListView';
 import ClickOutsideHandler from './hocs/clickOutsideHandler';
 
 class PopupList extends PureComponent {
   constructor(props) {
     super(props);
     this.ESCAPE_KEY_CODE = 27;
+  }
+
+  static propTypes = {
+    searchInputValue: PropTypes.string,
+    isFetching: PropTypes.bool,
+    autocompletePlanets: PropTypes.array,
+    isOpen: PropTypes.bool,
+    inputRef: PropTypes.shape({
+      bottom: PropTypes.number,
+      left: PropTypes.number,
+      width: PropTypes.number,
+    })
   }
 
   setInputText = (text) => {
@@ -39,7 +53,7 @@ class PopupList extends PureComponent {
 
     return (
       <ClickOutsideHandler
-        className="listContainer"
+        className='listContainer'
         style={calculatePosition()}
         outsideClickLogic={this.props.popupOutsideClick}
         keyCodes={[this.ESCAPE_KEY_CODE]}>

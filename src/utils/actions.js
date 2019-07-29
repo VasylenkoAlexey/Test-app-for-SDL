@@ -1,6 +1,6 @@
-export const inputChange = searchInputValue => ({
+export const inputChange = payload => ({
   type: 'INPUT_CHANGE',
-  searchInputValue
+  payload
 })
 
 export const inputClear = () => ({
@@ -11,12 +11,12 @@ export const popupOutsideClick = () => ({
   type: 'POPUP_OUTSIDE_CLICKED',
 })
 
-export const pushAutocompleteRef = (ref) => ({
+export const pushAutocompleteRef = (payload) => ({
   type: 'INPUT_REF_CREATED',
-  ref
+  payload
 })
 
-export const setAutocompleteOption = (option) => ({
+export const setAutocompleteOption = (payload) => ({
   type: 'AUTOCOMPLETE_OPTION_CLICKED',
-  option
+  payload
 })

@@ -1,5 +1,5 @@
-import { createStore, applyMiddleware } from "redux";
-import { initialState, SearchBoxComponent } from "./reducers";
+import { createStore, applyMiddleware } from 'redux';
+import { initialState, SearchBoxComponent } from './reducers';
 import logger from 'redux-logger';
 import createSagaMiddleware from 'redux-saga';
 import rootSaga from './sagas';
