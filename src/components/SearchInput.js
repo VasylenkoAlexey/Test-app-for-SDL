@@ -24,7 +24,6 @@ class SearchInput extends Component {
   handleClick = (event) => {
     this.props.inputClear();
     this.inputRef.current.focus();
-
   }
 
   render() {
@@ -48,11 +47,9 @@ class SearchInput extends Component {
         {this.props.isFetching && <div className="spinner"></div>}
 
       </div>
-
     );
   }
 }
-
 
 const mapStateToProps = (state /*, ownProps*/) => {
   return {

@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 function PopupListView(props) {
 
   let highlightResults = (word, searchQuery) => {
@@ -30,7 +29,6 @@ function PopupListView(props) {
   }
    else if (props.isFetching) {
       return null
-
 
   } else if (props.planetList.length === 0) {
       return (<ul><li>No results</li></ul>)

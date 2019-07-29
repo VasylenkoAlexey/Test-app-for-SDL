@@ -4,12 +4,10 @@ import { inputChange, popupOutsideClick, setAutocompleteOption } from "../utils/
 import PopupListView from "./PopupListView";
 import ClickOutsideHandler from './hocs/clickOutsideHandler';
 
-
 class PopupList extends PureComponent {
   constructor(props) {
     super(props);
     this.ESCAPE_KEY_CODE = 27;
-
   }
 
   setInputText = (text) => {
@@ -23,8 +21,6 @@ class PopupList extends PureComponent {
     }
     return styleObj
   }
-
-
 
   render() {
 
@@ -65,8 +61,6 @@ const mapStateToProps = (state /*, ownProps*/ ) => {
     isFetching: state.isFetching,
     isOpen: state.isAutocompleteListOpen,
     inputRef: state.inputRef,
-
-
   }
 }
 

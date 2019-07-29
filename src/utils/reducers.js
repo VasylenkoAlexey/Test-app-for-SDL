@@ -72,9 +72,8 @@ export function SearchBoxComponent(state = initialState, action) {
         searchInputValue: action.option,
         autocompletePlanets: [],
         isAutocompleteListOpen: false,
-
-
       })
+      
     default: 
       return state
   }

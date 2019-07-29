@@ -20,8 +20,6 @@ function* watchInput() {
   }
 }
 
-// TODO
-// Add handling 
 function* fetchPlanets(action) {
   try {
     let isFetching = true
@@ -50,7 +48,7 @@ function* fetchPlanets(action) {
       yield put({ type: 'ALL_PLANETS_FETCHED' })
       isFetching = false;
     }
-  }catch(e) {
+  } catch(e) {
       yield put({ type: 'PLANET_FETCH_ERRORED', e })
   } finally {
     if (yield cancelled()) {
