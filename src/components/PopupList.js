@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import { connect } from "react-redux";
-import { inputChange, popupOutsideClick } from "../utils/actions";
+import { inputChange, popupOutsideClick, setAutocompleteOption } from "../utils/actions";
 import PopupListView from "./PopupListView";
 import ClickOutsideHandler from './hocs/clickOutsideHandler';
 
@@ -9,6 +9,11 @@ class PopupList extends PureComponent {
   constructor(props) {
     super(props);
     this.ESCAPE_KEY_CODE = 27;
+
+  }
+
+  setInputText = (text) => {
+    this.props.setAutocompleteOption(text);
   }
 
   calculatePosition() {
@@ -18,6 +23,8 @@ class PopupList extends PureComponent {
     }
     return styleObj
   }
+
+
 
   render() {
 
@@ -42,6 +49,7 @@ class PopupList extends PureComponent {
         keyCodes={[this.ESCAPE_KEY_CODE]}>
         <PopupListView
           planetList={this.props.autocompletePlanets}
+          clickHandler={this.props.setAutocompleteOption}
           inputValue = {this.props.searchInputValue}
           isFetching = {this.props.isFetching}
           isOpen= {this.props.isOpen} />
@@ -62,7 +70,7 @@ const mapStateToProps = (state /*, ownProps*/ ) => {
   }
 }
 
-const mapDispatchToProps = { inputChange, popupOutsideClick };
+const mapDispatchToProps = { inputChange, popupOutsideClick, setAutocompleteOption };
 
 export default connect(
   mapStateToProps,

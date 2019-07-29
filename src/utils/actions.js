@@ -15,3 +15,8 @@ export const pushAutocompleteRef = (ref) => ({
   type: 'INPUT_REF_CREATED',
   ref
 })
+
+export const setAutocompleteOption = (option) => ({
+  type: 'AUTOCOMPLETE_OPTION_CLICKED',
+  option
+})

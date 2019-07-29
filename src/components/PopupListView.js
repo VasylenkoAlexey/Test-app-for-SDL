@@ -40,7 +40,10 @@ function PopupListView(props) {
       <ul className="popupList">{props.planetList.map(item => 
           // This is dirty way to get index of a planet in swapi DB, since that's the only place
           // where they send it. But we still can use it and create a url for certain planet for future. 
-          <li key={item.url.slice(SWAPI_MAGIC_NUMBER,-1)}>{highlightResults(item.name, props.inputValue)}</li>
+          <li key={item.url.slice(SWAPI_MAGIC_NUMBER,-1)}
+              onClick={()=> props.clickHandler(item.name)}>
+              {highlightResults(item.name, props.inputValue)}
+          </li>
         )}
       </ul>
   )

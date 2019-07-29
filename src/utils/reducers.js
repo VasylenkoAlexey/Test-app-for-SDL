@@ -48,7 +48,6 @@ export function SearchBoxComponent(state = initialState, action) {
       return Object.assign({}, state, {
         isFetching: false,
         isAutocompleteListOpen: true
-
       })
 
     case 'PLANET_FETCH_ABORTED':
@@ -66,6 +65,15 @@ export function SearchBoxComponent(state = initialState, action) {
     case 'INPUT_REF_CREATED':
       return Object.assign({}, state, {
         inputRef: action.ref,
+      })
+
+    case 'AUTOCOMPLETE_OPTION_CLICKED':
+      return Object.assign({}, state, {
+        searchInputValue: action.option,
+        autocompletePlanets: [],
+        isAutocompleteListOpen: false,
+
+
       })
     default: 
       return state
